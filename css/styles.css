@@ -66,6 +66,12 @@ h1, h2, h3, h4, p {
   font-weight: 400;
   margin-bottom: 1rem;
 }
+.container .main-content .hint span {
+  display: inline-block;
+}
+.container .main-content .hint span::first-letter {
+  text-transform: uppercase;
+}
 .container .footer {
   padding: 0 2rem 2rem;
 }
