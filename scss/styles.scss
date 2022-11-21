@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+//Global Variables
+$background-color-blue__light: #5172E7;
+$background-color-white: #fff;
+$btn-background-blue__light: #5172E7;
+$btn-background-grey: #5F696F;
+$text-color-dark: #000;
+$text-color-white: #fff;
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: $background-color-blue__light;
+    position: relative;
+}
+
+h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
+
+//Animations 
+
+
+
+.container {
+    background-color: $background-color-white;
+    width: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    box-shadow: -1px 0px 44px -13px rgba(0,0,0,0.58);
+-webkit-box-shadow: -1px 0px 44px -13px rgba(0,0,0,0.58);
+-moz-box-shadow: -1px 0px 44px -13px rgba(0,0,0,0.58);
+
+    .header {
+        padding: 2rem 2rem 1.2rem;
+        border-bottom: 1px solid lightgrey;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-align: center;
+
+            span {
+                letter-spacing: 2rem;
+                text-transform: uppercase;
+                margin-left: 1.5rem;
+                
+            }
+        }
+    }
+
+    .main-content {
+        padding: 2rem;
+        
+        .word {
+            margin: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: 2.5rem;
+        }
+
+        .hint, .timer {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    .footer {
+        padding: 0 2rem 2rem;
+        
+        input {
+            border-collapse: collapse;
+            display: block;
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid lightgrey;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        input:focus {
+            border-color: $background-color-blue__light;
+        }
+
+       .btn-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+       
+
+        .btn-refresh, .btn-checkword {
+            width: calc(50% - 10px);
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 2rem;
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            transition: all ease 0.2s;
+            
+            span {
+                vertical-align: middle;
+            }
+        }
+        .btn-refresh {
+            background-color: $btn-background-grey;
+            color: $text-color-white;
+        }
+
+        .btn-refresh:active, .btn-checkword:active {
+            transform: translateY(4px);
+        }
+
+        .btn-checkword {
+            background-color: $btn-background-blue__light;
+            color: $text-color-white;
+        }
+       }
+    }
+}
+
+
